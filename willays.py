@@ -42,6 +42,6 @@ for i in range(42):
     GrabbingData(url)
     print(Commune_Info)
 df = pd.DataFrame(Commune_Info)
-with open('df.json', 'w', encoding='utf-8') as file:
+with open('Communes.json', 'w', encoding='utf-8') as file:
     df.to_json(file, force_ascii=False)
 df.to_excel('Communes.xlsx' ,  encoding='utf8')
