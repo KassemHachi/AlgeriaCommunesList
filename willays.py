@@ -45,3 +45,4 @@ df = pd.DataFrame(Commune_Info)
 with open('Communes.json', 'w', encoding='utf-8') as file:
     df.to_json(file, force_ascii=False)
 df.to_excel('Communes.xlsx' ,  encoding='utf8')
+df.to_csv('Communes.csv',  encoding='utf8')
